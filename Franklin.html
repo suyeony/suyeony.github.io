@@ -1,77 +1,64 @@
 <!doctype html>
 <html lang="en-us">
- <head>
-  <meta charset="UTF-8">
-  <title>Page | Website | Keywords</title>
-  <meta name="description" content="Short Description of the page.">
-  <meta name="viewport" content="width=device-width">
-  <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
- </head>
-    
-    <style>
-     @import url('https://fonts.googleapis.com/css?family=Sansita');
-     h1,h2,h3 {
-     font-family: 'Sansita', sans-serif;
-     color: #0e89d5;
-      }
-        
-        li {
-            font-family: 'Sansita', sans-serif;
-        }
-    </style>
- <body>
-     <header>
-    
-     
-     <img src="plan-images/logo.jpeg">
-     <h1>Weather Site</h1>
-  
-      <h2>Franklin, ID</h2>
+     <head>
+      <meta charset="UTF-8">
+      <title>Page | Website | Keywords</title>
+      <meta name="description" content="Short Description of the page.">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen">
 
-     </header>
+     </head>
+
+    
+<body>
+    
+    <header id="page-header">
      
+     <div class="site-name">
+        <!--<img class="logo" src="plan-images/logo.jpeg" alt="Weather Site Logo">-->
+        &#9748
+        Weather Site
+     </div>
+    </header>
+        
+  
   <nav>
    <ul>
-    <li><a href="http://127.0.0.1:54221/index.html" title="Go to home page">Home</a></li>
-    <li>Franklin</li>
-    <li>Greenville</li>
-    <li>Springfield</li>
-    <li>Search</li>
+    <li><a href="index.html" title="Go to home page">Home</a></li>
+    <li><a href="#" title="">Franklin</a></li>
+    <li><a href="#" title="">Greenville</a></li>
+    <li><a href="#" title="">Springfield</a></li>
+    <li><a href="#" title="">Search</a></li>
    </ul>
   </nav>
-     <main>
-     <section><h3>Current conditions</h3>
-         </section>
-         <ul style="list-style-type:none">
-             <li><b>Wind:</b> 1 - 5</li>
-             <li><b>Direction:</b>Southwest</li>
-             <li><b>Precip:</b> 0 </li>
-         </ul>
-    
-    <section><h3>Location and Temperature</h3>
-         </section>
-         <ul style="list-style-type:none">
-             <li><b>City:</b>Franklin</li>
-             <li><b>State:</b>ID</li>
-             <li><b>Current temp:</b>-F</li>
-             <li><b>High:</b>90F</li>
-             <li><b>Low:</b>66F</li>
-             <li><b>Summary:</b>Sunny</li>
-         </ul>
      
-    <section><h3>Hourly Forcast</h3>
-         </section>
-         <ul sytle="list-style-type:none">
-            <li>7am - 72F</li>
-            <li>8am - 74F</li>
-            <li>9am - 77F</li>
+    <main>
+    <h1>Franklin, ID</h1>
+         <section class="overview">
+             <h2 id="temp">16F</h2>
+         <ul id = "summer">
+            <li>&#9728;</li>
+            <li>17F/3F</li>
          </ul>
-  
+        </section>
+         
+     <section class="cur_conditions">
+         <h2 id="current">Current conditions</h2>
+         <ul id = "wind">
+             <li><strong>Wind:</strong>
+                 Southwest @ 1-5 MPH</li>
+             
+             <li><strong>Precipitation:</strong>
+                 0%</li>
+         </ul>
+    </section>
 
-  </main>
+     </main>
+  
   <footer>
-   &copy;2017 Suyeon Yang
+   &copy;2017, The Weather Site
   </footer>
+
  </body>
 </html>
 

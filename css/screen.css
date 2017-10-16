@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+.site-name {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+* {
+ box-sizing: border-box; /* changes width property
+    to total width instead of content width */
+}
+*:before, *:after{
+ box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+ display: block; /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    left: 0;
+}
+body {
+ margin: 0; /* remove any margin from body */
+ padding: 0; /* ditto for padding */
+ font-family: "Helvetica", sans-serif;
+ font-size: 20px;
+}
+
+main {
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ background-image: url("/plan-images/sunny-winter.jpg");
+ background-size: cover;
+ background-color: #fff;
+}
+
+h1 {
+    outline-color: #fff;
+}
+nav ul {
+ display: flex;
+ list-style: none;
+ padding: 0;
+ justify-content: space-around;
+ /*line-height: 2em;*/
+ 
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:  #0E89D5;
+    text-align: center;
+    
+}
+
+nav ul{
+    padding: 10px;
+}
+
+nav li {
+    margin: 5px;
+    font-size: 15px;
+}
+footer {
+    margin-bottom: 3em;
+    background-color: #0e89d5;
+    
+    
+}
+
+ul#summer {
+    list-style: none;
+    display: flex;
+    line-height: 2em;
+    justify-content: space-around;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+ul#wind {
+    list-style: none;
+    text-align: center;
+    padding: 1em;
+    align-content: center;
+}
+
+header {
+     font-family: 'Sansita', sans-serif, "generic-family";
+     background-color: #0e89d5;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #D8F;
+}
+
+nav a:normal {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #0E89D5;
+}
+
+nav a:active {
+    text-decoration: none;
+}
+
+.overview {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+
+h2#temp {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 7px;
+    
+    
+}
+.cur_conditions {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cur_conditions #wind {
+    text-align: center;
+}
