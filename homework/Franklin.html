@@ -1,20 +1,24 @@
 <!doctype html>
 <html lang="en-us">
- <head>
-  <meta charset="UTF-8">
-  <title>Page | Website | Keywords</title>
-  <meta name="description" content="Short Description of the page.">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen">
+     <head>
+      <meta charset="UTF-8">
+      <title>Page | Website | Keywords</title>
+      <meta name="description" content="Short Description of the page.">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
 
- </head>
-    
+     </head>
+
     
 <body>
-    <div>
+    
     <header id="page-header">
-         <img src="plan-images/logo.jpeg" alt="Weather Site Logo">
-        <span class="site-name">Weather Site</span>
+     
+     <div class="site-name">
+        <!--<img class="logo" src="plan-images/logo.jpeg" alt="Weather Site Logo">-->
+        &#9748
+        Weather Site
+     </div>
     </header>
         
   
@@ -27,30 +31,34 @@
     <li><a href="#" title="">Search</a></li>
    </ul>
   </nav>
-     <main>
+     
+    <main>
     <h1>Franklin, ID</h1>
-         <p>16</p>
-         <ul>
-            <li>Summary Image</li>
-            <li>17/3</li>
+         <section class="overview">
+             <h2 id="temp">16F</h2>
+         <ul id = "summer">
+            <li>&#9728;</li>
+            <li>17F/3F</li>
          </ul>
+        </section>
          
-     <section><h2>Current conditions</h2>
-         </section>
-         <ul style="list-style-type:none">
-             <li><b>Wind:</b></li> <br>
-             Southwest @ 1-5 MPH
+     <section class="cur_conditions">
+         <h2 id="current">Current conditions</h2>
+         <ul id = "wind">
+             <li><strong>Wind:</strong>
+                 Southwest @ 1-5 MPH</li>
              
-             <li><b>Precipitation:</b></li> <br>
-             0%
+             <li><strong>Precipitation:</strong>
+                 0%</li>
          </ul>
+    </section>
 
-         
-  </main>
+     </main>
+  
   <footer>
-   &copy;2017 Suyeon Yang
+   &copy;2017, The Weather Site
   </footer>
-    </div>
+
  </body>
 </html>
 
