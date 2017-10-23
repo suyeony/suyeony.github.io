@@ -2,7 +2,25 @@
 
 .site-name {
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 500;
+    display: flex;
+    font-family: 
+}
+
+
+div h3 {
+    margin: 0;
+    font-size: 1.5em;
+    
+}
+div ul {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+div li {
 }
 
 * {
@@ -49,7 +67,8 @@ main {
 }
 
 h1 {
-    outline-color: #fff;
+    color: #0E89D5;
+    font-size: .05;
 }
 nav ul {
  display: flex;
@@ -81,7 +100,7 @@ nav li {
 footer {
     margin-bottom: 3em;
     background-color: #0e89d5;
-    
+    padding: 2em;
     
 }
 
@@ -125,6 +144,15 @@ nav a:active {
     text-decoration: none;
 }
 
+.middle {
+    flex-direction: row;
+    align-items: center;
+}
+
+
+p {
+    display: none;
+} 
 .overview {
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
@@ -135,24 +163,171 @@ nav a:active {
     position: relative;
     
 }
+ul
 
+h2#current {
+    font-size:1em;
+}
 
 h2#temp {
     font-weight: bold;
     font-size: 2em;
     text-align: center;
     letter-spacing: 7px;
-    
-    
-}
+    }
+
 .cur_conditions {
     background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
+    
     border: 1px solid;
     border-radius: 5px;
-    text-align: center;
+    
+    
+    
 }
 
 .cur_conditions #wind {
+    
+}
+
+
+
+h2#title {
+    font-weight: bold;
+    font-size: 1.5em;
     text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+ul#time_F {
+    justify-content: space-around;
+    padding: 5px;
+    line-height: 2em;
+    list-style: none;
+
+    
+}
+
+.hourly_forecast {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .site-name {
+        font-size: 3em;
+        
+    }
+    .hourly_forecast {
+        display: block;
+        order: 3;
+        padding: 30px;
+        height: 300px;
+        width: 500px;
+        
+        
+        background-color: rgba(200,200,200,.6);
+        margin: .2em auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        border: 1px solid;
+        border-radius: 5px;
+        position: relative;
+    
+    
+    }
+    
+    #schedule {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 0.7em;
+        justify-content: space-around
+    
+    }
+    
+    ul#time_F1 {
+        padding: 0;
+        padding-top: 10px;
+        
+    }
+    
+    ul#time_F2 {
+        padding: 0;
+        padding-top: 10px;
+        
+    }
+    
+
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+    
+    .middle {
+        order: 1;
+        padding: 30px;
+    }
+    
+    p {
+        display: block;
+    }
+    
+    .overview {
+        order: 2;
+        padding: 30px;
+        height: 300px;
+        margin: 10px;
+        margin-top: 0;
+        
+    }
+    
+    nav {
+        position: relative;
+        top: 0;
+        bottom: 100%;
+    }
+    
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    #current_temp {
+        top: 0;
+        font-size: 1.5em;
+        margin: 0;
+        
+    }
+     
+    ul.time_F {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .hourly_forecast {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    }
+    
+    .cur_conditions {
+        height: 300px;
+        margin: 10px;
+    }
+    
+    .id {
+        position: relative;
+        margin-bottom: 0;
+        right: 100%;
+        padding: 5px;
+    }
+    
+    
 }
