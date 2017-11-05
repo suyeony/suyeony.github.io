@@ -2,10 +2,10 @@
 <html lang="en-us">
      <head>
       <meta charset="UTF-8">
-      <title>greenville | suyeony.github.io | weather</title>
+      <title>Greenville | suyeony.github.io | weather</title>
       <meta name="description" content="Short Description of the page.">
       <meta name="viewport" content="width=device-width">
-      <link rel="stylesheet" type="text/css" href="/css/screen.greenville.css" media="screen">
+      <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
 
      </head>
 
@@ -25,7 +25,7 @@
   <nav>
    <ul>
     <li><a href="index.html" title="Go to home page">Home</a></li>
-    <li><a href="franklin2.html" title="">Franklin</a></li>
+    <li><a href="franklin2.html" title="Go to franklin">Franklin</a></li>
     <li><a href="#" title="">Greenville</a></li>
     <li><a href="#" title="">Springfield</a></li>
     <li><a href="#" title="">Search</a></li>
@@ -34,16 +34,20 @@
      
     <main>
     <h1 class="id">Greenville, SC</h1>
-    <div class="middle">
+    <div class="main-section">    
+    
+    
          <section class="overview">
-             <p id= "current_temp"><strong>Current Temp</strong></p>
-             <h2 id="temp">16</h2>
+             <h2 id= "current_temp"><strong>Current Temp</strong></h2>
+             <h3 id="temp">16</h3>
          <ul id = "summer">
-            <li>&#9728;</li>
-            <li>17/3</li>
+            <div id="today">
+            <li>Today's High and Low</li>
+            <li>17F/-3F</li>
+            </div>
          </ul>
         </section>
-    </div>
+    
          
      <section class="cur_conditions">
          <h2 id="current">Current conditions</h2>
@@ -54,13 +58,17 @@
              <li><strong>Precipitation:</strong>
                  0%</li>
          </ul>
+         <ul id="sunny">
+            <li id="image">&#9728;</li>
+            <li id="description">Sunny</li>
+         </ul>
     </section>
     
      <section class="hourly_forecast">
          <h2 id="title">Hourly Forecast</h2>
          <div id="schedule">
         <ul id="time_F1">
-            <li>12:00AM : 55</li>
+            <li>12:00pm : 55</li>
             <li>1:00AM : 56</li>
             <li>2:00AM : 56</li>
             <li>3:00AM : 56</li>
@@ -89,7 +97,7 @@
         </ul>
          </div>
         </section>
-    
+        </div>
      </main>
   
   <footer>

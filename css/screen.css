@@ -161,15 +161,17 @@ p {
     border: 1px solid;
     border-radius: 5px;
     position: relative;
-    
 }
+
 ul
 
 h2#current {
-    font-size:1em;
+    font-size: 1em;
+    text-align: center;
+
 }
 
-h2#temp {
+h3#temp {
     font-weight: bold;
     font-size: 2em;
     text-align: center;
@@ -186,7 +188,6 @@ h2#title {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
-    margin: 0;
     font-weight: bold;
 }
 
@@ -206,14 +207,26 @@ ul#time_F {
 @media screen and (min-width: 700px) {
     .site-name {
         font-size: 3em;
-        
     }
+    
+    h1.id {
+        padding-left: 20px;
+    }
+    .overview, .hourly_forecast, .cur_conditions {
+        padding: 0;
+        width: 30%;
+        
+        }    
+        
+    
     .hourly_forecast {
         display: block;
         order: 3;
+/*
         padding: 30px;
         height: 300px;
         width: 500px;    
+*/
     
     }
     
@@ -227,13 +240,13 @@ ul#time_F {
     
     ul#time_F1 {
         padding: 0;
-        padding-top: 10px;
+/*        padding-top: 10px;*/
         
     }
     
     ul#time_F2 {
         padding: 0;
-        padding-top: 10px;
+/*        padding-top: 10px;*/
         
     }
     
@@ -241,7 +254,7 @@ ul#time_F {
     
     .main-section {
         flex-flow: row nowrap;
-        
+        padding-bottom: 30px;
            
     }
     
@@ -267,8 +280,9 @@ ul#time_F {
         font-size: 1.5em;
     }
     
-    #current_temp {
+    h2#current_temp {
         font-size: 1.5em;
+        text-align: center;
         
     }
      
@@ -278,17 +292,38 @@ ul#time_F {
         align-items: stretch;
     }
     
-    .id {
-       
-        
-       
+    h2#current {
+        text-align: center;
     }
     
     #wind {
         display: flex;
         flex-wrap: wrap;
+    }
     
+    ul#sunny {
+        display: flex;
+        padding: 20px;
+        align-content: center;
+    
+    }
+    
+    li#image {
+        font-size: 3em;
         
     }
     
+    li#description {
+        align-self: center;
+    }
+    
+    ul#summer {
+        padding-left: 0;
+        letter-spacing: 0;
+        display: block;
+    }
+    
+    div#today {
+        text-align: center;
+    }
 }

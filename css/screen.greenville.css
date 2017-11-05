@@ -60,13 +60,12 @@ body {
 main {
  display: flex;
  flex-flow: column nowrap;
- align-items: center;
  background-image: url("/plan-images/sunny-winter.jpg");
  background-size: cover;
  background-color: #fff;
 }
 
-h1.id {
+h1 {
     color: #0E89D5;
     font-size: .05;
 }
@@ -104,6 +103,12 @@ footer {
     
 }
 
+ .main-section {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+           
+    }
 ul#summer {
     list-style: none;
     display: flex;
@@ -144,16 +149,11 @@ nav a:active {
     text-decoration: none;
 }
 
-.middle {
-    flex-direction: row;
-    align-items: center;
-}
-
 
 p {
     display: none;
 } 
-.overview {
+.overview, .hourly_forecast, .cur_conditions{
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     padding-left: 3em;
@@ -175,16 +175,6 @@ h2#temp {
     text-align: center;
     letter-spacing: 7px;
     }
-
-.cur_conditions {
-    background-color: rgba(200,200,200,.6);
-    
-    border: 1px solid;
-    border-radius: 5px;
-    
-    
-    
-}
 
 .cur_conditions #wind {
     
@@ -223,17 +213,7 @@ ul#time_F {
         order: 3;
         padding: 30px;
         height: 300px;
-        width: 500px;
-        
-        
-        background-color: rgba(200,200,200,.6);
-        margin: .2em auto;
-        padding-left: 3em;
-        padding-right: 3em;
-        border: 1px solid;
-        border-radius: 5px;
-        position: relative;
-    
+        width: 500px;    
     
     }
     
@@ -259,33 +239,21 @@ ul#time_F {
     
 
     
-    main {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .main-section {
+        flex-flow: row nowrap;
+        
            
     }
     
-    .middle {
-        order: 1;
-        padding: 30px;
-        margin-bottom: 100px;
-    }
+   
     
     p {
         display: block;
     }
     
-    p#current_temp {
-       
-    }
-    
     .overview {
         order: 2;
-        padding: 30px;
-        height: 300px;
-        margin: 10px;
-        top: 10px;
+       
         
     }
     
@@ -300,9 +268,7 @@ ul#time_F {
     }
     
     #current_temp {
-        top: 0;
         font-size: 1.5em;
-        margin: 0;
         
     }
      
@@ -311,25 +277,10 @@ ul#time_F {
         flex-direction: row;
         align-items: stretch;
     }
-    .hourly_forecast {
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    padding-left: 3em;
-    padding-right: 3em;
-    border: 1px solid;
-    border-radius: 5px;
-    position: relative;
-    }
-    
-    .cur_conditions {
-        height: 300px;
-        margin: 10px;
-    }
     
     .id {
-        position: relative;
-        margin-bottom: 0;
-        right: 100%;
+       
+        
        
     }
     
