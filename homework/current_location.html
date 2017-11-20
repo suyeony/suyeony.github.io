@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-us">
+     <head>
+      <meta charset="UTF-8">
+      <title>Franklin | suyeony.github.io | weather</title>
+      <meta name="description" content="Short Description of the page.">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+         
+     </head>
+
+    
+<body>
+    
+    <header id="page-header">
+     
+     <div class="site-name">
+        <!--<img class="logo" src="plan-images/logo.jpeg" alt="Weather Site Logo">-->
+        &#9748;
+        Weather site
+     </div>
+    </header>
+        
+  
+  <nav>
+   <ul>
+    <li><a href="#" title="Go to home page">Home</a></li>
+    <li><a href="franklin2.html" title="">Franklin</a></li>
+    <li><a href="greenville.html" title="Go to greenville">Greenville</a></li>
+    <li><a href="#" title="">Springfield</a></li>
+    <li><a href="#" title="">Search</a></li>
+   </ul>
+  </nav>
+     
+    <main>
+    <h1 id="location"></h1>
+    <div class="main-section">    
+        <section class="overview">
+             <h2 id= "current_temp"><strong>Current Temp</strong></h2>
+             <h3 id="temp"></h3>
+         <ul id = "summer">
+             <div id = "today">
+            <li>Today's High and Low</li>
+            <li id="highAndLow"></li>
+             </div>
+         </ul>
+        </section>
+    
+         
+     <section class="cur_conditions">
+         <h2 id="current">Current conditions</h2>
+         <ul id = "curr_wind">
+             <li id="wind">winds:</li>
+             <li id="Precipitation"></li>
+         </ul>
+         <ul id= "sunny">
+              
+             <li id="description"></li>
+         </ul>
+    </section>
+    
+     <section class="hourly_forecast">
+         <h2 id="title">Hourly Forecast</h2>
+         <div id="schedule">
+        <ul id="time_F1">
+            <li>12:00AM : 67</li>
+            <li>1:00AM : 67</li>
+            <li>2:00AM : 69</li>
+            <li>3:00AM : 69</li>
+            <li>4:00AM : 69</li>
+            <li>5:00AM : 70</li>
+            <li>6:00AM : 69</li>
+            <li>7:00AM : 72</li>
+            <li>8:00AM : 74</li>
+            <li>9:00AM : 77</li>
+            <li>10:00AM : 79</li>
+            <li>11:00AM : 81</li>
+         </ul>
+        <ul id="time_F2">
+            <li>12:00PM : 84</li>
+            <li>1:00PM : 86</li>
+            <li>2:00PM : 88</li>
+            <li>3:00PM : 90</li>
+            <li>4:00PM : 90</li>
+            <li>5:00PM : 85</li>
+            <li>6:00PM : 83</li>
+            <li>7:00PM : 79</li>
+            <li>8:00PM : 74</li>
+            <li>9:00PM : 70</li>
+            <li>10:00PM : 68</li>
+            <li>11:00PM : 66</li>
+        </ul>
+         </div>
+        </section>
+        
+    </div>
+     </main>
+  
+  <footer>
+   &copy;2017, The Weather Site
+  </footer>
+     <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    
+    <script src="/homework/cur_location.json">
+    </script>
+
+ </body>
+</html>
+
