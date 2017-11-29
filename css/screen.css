@@ -20,9 +20,6 @@ div ul {
     margin: 0;
 }
 
-div li {
-}
-
 * {
  box-sizing: border-box; /* changes width property
     to total width instead of content width */
@@ -99,11 +96,11 @@ nav li {
 footer {
     margin-bottom: 3em;
     background-color: #0e89d5;
-    padding: 2em;
+    
     
 }
 
- .main-section {
+.main-section {
         display: flex;
         flex-direction: column;
         align-content: space-around;
@@ -176,13 +173,7 @@ h3#temp {
     font-size: 2em;
     text-align: center;
     letter-spacing: 7px;
-    }
-
-.cur_conditions #wind {
-    
 }
-
-
 
 h2#title {
     font-weight: bold;
@@ -196,8 +187,6 @@ ul#time_F {
     padding: 5px;
     line-height: 2em;
     list-style: none;
-
-    
 }
 
 .hourly_forecast {
@@ -215,7 +204,6 @@ ul#time_F {
     .overview, .hourly_forecast, .cur_conditions {
         padding: 0;
         width: 30%;
-        
         }    
         
     
@@ -227,7 +215,6 @@ ul#time_F {
         height: 300px;
         width: 500px;    
 */
-    
     }
     
     #schedule {
@@ -235,13 +222,11 @@ ul#time_F {
         flex-wrap: nowrap;
         font-size: 0.7em;
         justify-content: space-around
-    
     }
     
     ul#time_F1 {
         padding: 0;
 /*        padding-top: 10px;*/
-        
     }
     
     ul#time_F2 {
@@ -251,7 +236,6 @@ ul#time_F {
     }
     
 
-    
     .main-section {
         flex-flow: row nowrap;
         padding-bottom: 30px;
