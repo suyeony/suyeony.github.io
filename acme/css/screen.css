@@ -1,0 +1,332 @@
+/*This is the weather application stylesheet*/
+
+/* Bring in the weather_type.css file */
+@import url('user_styles.css');
+
+/*Change the box model*/
+
+div#content {
+   border: 1px solid #fff;
+   background-color: #fff;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+    
+
+}
+
+
+*{box-sizing: border-box;
+    max-width: 100%;}
+
+
+/* *********** Base Styles ***********/
+
+
+/*The Body*/
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+    background: url(/acme/images/site/background.jpg) no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+
+
+/*The body inner-div*/
+
+#wrapper {
+	width: 100%;
+	padding: 0 1em 0;
+	position: relative;
+}
+
+
+/*The page header */
+
+#page-header h1 {
+	margin: 0;
+}
+
+.tagline {
+	font-weight: normal;
+	font-style: italic;
+	font-size: .75em;
+	margin: 0 0 0 1em;
+}
+
+
+/*The page navigation*/
+nav#page-nav{
+    
+}
+
+#page-nav ul {
+	border: 1px solid #de2226;
+	list-style: none;
+    
+
+    
+}
+ 
+#page-nav .flexlist li {
+	display: flex;
+    font-size: 1.5em;
+    
+}
+
+.flexlist {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+    background-color: #de2226;
+    
+}
+
+#page-nav a {
+	display: flex;
+    justify-content: flex-start;
+	flex: auto;
+	background-color: #de2226;
+	color: #fff;
+	padding: 1% 5%;
+	text-decoration: none;
+    font-size: 0.5em;
+    margin: auto;
+    padding: 10px;
+}
+
+#page-nav a:hover {
+	background-color: #fff;
+	color: #000;
+	border-bottom: 1px solid #fff;
+}
+
+/*The main element*/
+
+
+/*The page footer*/
+
+#page-footer {
+	font-size: .7rem;
+	margin: 0;
+    border-top: 3px solid #000;
+}
+
+#page-footer > *{
+	padding: 0 0 0 1em;
+}
+
+#page-footer li{
+	padding-right: 1em;
+}
+
+footer{
+    width: 100%;
+    border-top: 0.2em solid #000;
+}
+
+#footer{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+
+h1#descrip_content{
+    font-size: 2em;
+    margin: 0;
+    
+}
+
+div#feature_header {
+    position: relative;
+    text-align: center;
+    
+}
+
+ul#hero_description{
+    list-style: none;
+    color: #990033;
+    height: 10em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    text-align: right;
+    position: absolute;
+    top: 8px;
+    right: 16px;    background-size: contain, cover;*/
+}
+
+#hero_description li{
+    font-size: 0.8em;
+}
+
+h2#acmeRocket {
+    margin: 0;
+}
+
+div.secondAndThird{
+    display: block;
+    align-content: center;
+    justify-content: space-around;
+}
+
+h3#descript_recipes #reviews{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+section.featured_recipes{
+    
+}
+
+div#twoRecipes{
+    
+}
+
+div#first_recipe, div#second_recipe {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+div#foodImage{
+    width: 7.5em;
+    background: #808080;
+}
+
+/*section.rocket_reviews*/
+
+ul#review_list{
+    font-size: 1.2em;
+}
+
+/* ***** product_content ***** */
+
+h1#product_name{
+    margin: 0;
+    
+}
+section#contents {
+    display: flex;
+}
+
+#product_picture img {
+    width: 320px;
+    height: 230px;
+    position: relative;
+}
+
+#descrip_section {
+    margin: 20px;
+    margin-top: 0px;
+    
+}
+
+#product_price {
+    color: #de2226;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+/* ***** Utility Classes ***** */
+
+.hidden{
+	display: none;
+}
+
+/* ***** Small Screens ***** */
+/*
+@media only screen and (max-width: 350px){
+    .content_container {
+        width:100%;
+    }
+	#page-header {
+		font-size: 0.05em;
+	}
+    
+    h1#descrip_content{
+        font-size: 2em;
+    }
+    ul#hero_description{
+        background-image: url(/acme/images/site/feature_small.jpg);
+        font-size: 0.7em;
+        height: 144px;
+        background-size: contain, cover;
+        
+    }
+    
+    div.secondAndThird{
+    display: block;
+    
+}
+    
+    .featured_recipes {
+    width:100%;
+    
+    }
+    
+    #descript_recipes {
+        font-size: 1em;
+    }
+    
+    
+	#page-nav ul {
+		font-size: 4vw;
+	}
+    
+    #reviews {
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    #review_list {
+        font-size: 0.4em;
+    }
+	#footer {
+		font-size: 0.7rem;
+	}
+    
+    section#contents {
+        display: block;
+    }
+}
+*/
+
+/* ***** Large Screens ***** */
+
+@media only screen and (min-width: 410px){
+    #page-nav ul {
+		font-size: 6vw;
+	}
+    
+    div#feature_header {
+        position: relative;
+        text-align: center;
+    }
+    
+    ul#hero_description {
+    list-style: none;
+    color: #990033;
+    height: 10em;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: right;
+    top: 8px;
+    right: 16px;
+    position: absolute;
+    }
+    
+    div.secondAndThird{
+    display: flex;
+    }
+    
+    #imageAndLink {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,144 @@
+/*This is the weather application stylesheet*/
+
+/* Bring in the weather_type.css file */
+@import url('user_styles.css');
+
+/*Change the box model*/
+
+div#content {
+   
+   width: 90%;
+
+    
+
+}
+
+* {
+	box-sizing: inherit;
+    width: 100%;
+    
+}
+
+
+/* *********** Base Styles ***********/
+
+
+/*The Body*/
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	
+	-webkit-text-size-adjust: 100%;
+
+}
+
+
+/*The body inner-div*/
+
+
+
+
+/*The page header */
+
+#page-header h1 {
+	margin: 0;
+}
+
+.tagline {
+	font-weight: normal;
+	font-style: italic;
+	font-size: .75em;
+	margin: 0 0 0 1em;
+}
+
+
+/*The page navigation*/
+nav#page-nav{
+    background-color: #3c4d71;
+    height: auto;
+}
+
+#page-nav ul {
+	border: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	list-style: none;
+    height: 2.1em;    
+}
+
+ 
+
+
+.flexlist {
+	display: flex;
+	list-style: none;
+    margin: 0px;
+    align-items: center;
+    
+}
+
+#page-nav a {
+	display: flex;
+    justify-content: flex-start;
+	flex: auto;
+	padding: 1% 5%;
+	text-decoration: none;
+    font-size: 1.5em;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+}
+
+#page-nav a:hover {
+	background-color: #fff;
+	color: #000;
+	border-bottom: 0.5px solid #fff;
+    height: 2.1em;
+}
+
+/*The main element*/
+
+#page-main {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#first_section {
+    margin: 50px;
+
+    }
+
+#second_section {
+    text-align: center;
+    
+}
+
+/*The page footer*/
+
+#page-footer {
+	font-size: .7rem;
+	margin: 0;
+    border-top: 3px solid #000;
+}
+
+#page-footer > *{
+	padding: 0 0 0 1em;
+}
+
+#page-footer li{
+	padding-right: 1em;
+}
+
+footer{
+    width: 100%;
+    border-top: 0.2em solid #000;
+}
+
+#footer{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+
+
