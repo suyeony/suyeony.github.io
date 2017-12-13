@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Weather Center</title>
+    <title id="titles"></title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/acme/css/screen.css" media="screen">
@@ -31,10 +31,10 @@
       <nav id="page-nav">
         <ul class="flexlist">
           <li><a href="/acme/index.html" title="Content Title here">Home</a></li>
-          <li><a href="." title="Anvils">Anvils</a></li>
-          <li><a href="." title="Explosives">Explosives</a></li>
-          <li><a href="." title="Decoys">Decoys</a></li>
-          <li><a href="." title="Traps">Traps</a></li>
+          <li><a href="." id="anvils" title="Anvils"></a></li>
+          <li><a href="." id="explo" title="Explosives"></a></li>
+          <li><a href="." id="decoy" title="Decoys"></a></li>
+          <li><a href="." id="trap" title="Traps"></a></li>
         </ul>
       </nav>
         
@@ -60,14 +60,14 @@
         
         <div id="twoRecipes">
         <div id="first_recipe">
-            <div id="imageAndLink">
-                <div id= foodImage>
+            <div id="imageAndLink1">
+                <div id="foodImage1">
                     <img id="bbq" src=/acme/images/recipes/bbqsand.jpg alt="bbq">
                 </div>
                 <a href=#>Roadrunner<br>BBQ</a>
             </div>
-            <div id="imageAndLink">
-                <div id="foodImage">
+            <div id="imageAndLink2">
+                <div id="foodImage2">
                     <img id="pie" src=/acme/images/recipes/potpie.jpg alt="potpie">
                 </div>
                 <a href=#>Pot Pie</a>
@@ -76,15 +76,15 @@
         
         
         <div id="second_recipe">
-            <div id="imageAndLink">
-                <div id="foodImage">
+            <div id="imageAndLink3">
+                <div id="foodImage3">
                     <img id="soup" src=/acme/images/recipes/soup.jpg alt="soup">
                 </div>
                 <a href=#>Soup</a>
                 
             </div>
-            <div id="imageAndLink">
-                <div id="foodImage">
+            <div id="imageAndLink4">
+                <div id="foodImage4">
                     <img id="tacos" src=/acme/images/recipes/taco.jpg alt="tacos">
                 </div>
                     <a href=#>tacos</a>
@@ -113,10 +113,11 @@
         <section id="contents">
         <div id="product_picture"></div>
           
-        <div id="descrip_section"><p id="product_description"></p>
+        <div id="descrip_section">
+            <p id="product_description"></p>
           <h4 id="product_manufacturer"></h4>
           <h4 id="product_reviews"></h4>
-        <h1 id="product_price"></h1>
+          <h1 id="product_price"></h1>
         </div>
         </section>
           

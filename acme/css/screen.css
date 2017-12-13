@@ -1,6 +1,4 @@
-/*This is the weather application stylesheet*/
-
-/* Bring in the weather_type.css file */
+/* Bring in the screen.css file */
 @import url('user_styles.css');
 
 /*Change the box model*/
@@ -159,7 +157,9 @@ ul#hero_description{
     text-align: right;
     position: absolute;
     top: 8px;
-    right: 16px;    background-size: contain, cover;*/
+    right: 16px; 
+    display: block;
+    justify-content: flex-end;
 }
 
 #hero_description li{
@@ -181,13 +181,6 @@ h3#descript_recipes #reviews{
     margin: 0;
 }
 
-section.featured_recipes{
-    
-}
-
-div#twoRecipes{
-    
-}
 
 div#first_recipe, div#second_recipe {
     display: flex;
@@ -195,7 +188,8 @@ div#first_recipe, div#second_recipe {
     text-align: center;
 }
 
-div#foodImage{
+
+#foodImage1, #foodImage2, #foodImage3, #foodImage4{
     width: 7.5em;
     background: #808080;
 }
@@ -296,10 +290,44 @@ section#contents {
     }
 }
 */
+/* ***** Medium Screens ***** */
+@media only screen and (min-width: 700px){
+    #page-nav ul {
+		font-size: 6vw;
+	}
+    
+    div#feature_header {
+        position: relative;
+        text-align: center;
+    }
+    
+    ul#hero_description {
+    list-style: none;
+    color: #990033;
+    height: 10em;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: right;
+    top: 8px;
+    right: 20px;
+    position: absolute;
+    justify-content: flex-end;
+    
+    }
+    
+    div.secondAndThird{
+    display: flex;
+    }
+    
+    #imageAndLink1, #imageAndLink2, #imageAndLink3, #imageAndLink4 {
+        padding: 5px;
+    }
+}
 
 /* ***** Large Screens ***** */
 
-@media only screen and (min-width: 410px){
+@media only screen and (min-width: 1150px){
     #page-nav ul {
 		font-size: 6vw;
 	}
@@ -318,15 +346,17 @@ section#contents {
     font-size: 2em;
     text-align: right;
     top: 8px;
-    right: 16px;
+    right: 100px;
     position: absolute;
+    justify-content: flex-end;
+    
     }
     
     div.secondAndThird{
     display: flex;
     }
     
-    #imageAndLink {
+    #imageAndLink1, #imageAndLink2, #imageAndLink3, #imageAndLink4 {
         padding: 5px;
     }
 }

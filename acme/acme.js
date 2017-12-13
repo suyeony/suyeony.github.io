@@ -1,3 +1,28 @@
+$(function () {
+console.log("It works.")
+$("title").html("Home Acme, Inc.");
+   
+$.ajax({
+    url: "js/acme.json"
+    , dataType: "json"
+    , success: function (data) {
+      console.log(data);
+      var anv = data.Links.link1;
+      var exp = data.Links.link2;
+      var dec = data.Links.link3;
+      var traps = data.Links.link4;
+      console.log(anv);
+    console.log(exp);
+    console.log(dec);
+    console.log(traps);
+        
+      document.getElementById("anvils").innerHTML = anv;
+      document.getElementById("explo").innerHTML = exp;
+      document.getElementById("decoy").innerHTML = dec;
+      document.getElementById("trap").innerHTML = traps;
+    }
+  });
+  });
 
 // Intercept the menu link clicks
 $("#page-nav").on("click", "a", function (evt) {
@@ -8,6 +33,9 @@ $("#page-nav").on("click", "a", function (evt) {
       if (acmeNav === "Home") {
         document.getElementById("page-main").style.display = "block";
         document.getElementById("product_content").style.display = "none";
+          
+        document.getElementById("titles").innerHTML = 
+    "Home Acme, Inc.";
       }
       
       else {
@@ -25,7 +53,7 @@ $("#page-nav").on("click", "a", function (evt) {
     , success: function (data) {
       console.log(data);
       console.log(data[acmeNav]);
-        
+      
       var name = data[acmeNav].name;
       
       var picture = data[acmeNav].path;
@@ -40,6 +68,9 @@ $("#page-nav").on("click", "a", function (evt) {
       console.log(review);
       console.log(price);
         
+    document.getElementById("titles").innerHTML = name + 
+    " Acme, Inc."
+        
     document.getElementById("product_name").innerHTML = name;
     
     document.getElementById("product_picture").innerHTML = '<img src="' + picture + '" alt="pictures">';
@@ -48,12 +79,7 @@ $("#page-nav").on("click", "a", function (evt) {
      document.getElementById("product_manufacturer").innerHTML = "Made by: " + manufact;
      document.getElementById("product_reviews").innerHTML = "Reviews: " + review + "/5 stars";
      document.getElementById("product_price").innerHTML = "price: $" + price;
-//        
-//     sum.innerHTML = weather + '<img src="' + icon + '" alt="today weather summary">';
-//        
-//        
-//      $("#cityDisplay").text(location);
-//      $("title").html(location + " | Weather Center");
+
      
     }
   });
