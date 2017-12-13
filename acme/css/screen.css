@@ -208,9 +208,7 @@ section#contents {
     display: flex;
 }
 
-#product_picture img {
-    width: 320px;
-    height: 230px;
+#product_picture {
     position: relative;
 }
 
@@ -232,62 +230,9 @@ section#contents {
 	display: none;
 }
 
-/* ***** Small Screens ***** */
-/*
-@media only screen and (max-width: 350px){
-    .content_container {
-        width:100%;
-    }
-	#page-header {
-		font-size: 0.05em;
-	}
-    
-    h1#descrip_content{
-        font-size: 2em;
-    }
-    ul#hero_description{
-        background-image: url(/acme/images/site/feature_small.jpg);
-        font-size: 0.7em;
-        height: 144px;
-        background-size: contain, cover;
-        
-    }
-    
-    div.secondAndThird{
+section#contents {
     display: block;
-    
 }
-    
-    .featured_recipes {
-    width:100%;
-    
-    }
-    
-    #descript_recipes {
-        font-size: 1em;
-    }
-    
-    
-	#page-nav ul {
-		font-size: 4vw;
-	}
-    
-    #reviews {
-        font-size: 1em;
-        padding-top: 5px;
-    }
-    #review_list {
-        font-size: 0.4em;
-    }
-	#footer {
-		font-size: 0.7rem;
-	}
-    
-    section#contents {
-        display: block;
-    }
-}
-*/
 /* ***** Medium Screens ***** */
 @media only screen and (min-width: 700px){
     #page-nav ul {
@@ -321,6 +266,12 @@ section#contents {
     #imageAndLink1, #imageAndLink2, #imageAndLink3, #imageAndLink4 {
         padding: 5px;
     }
+    
+    section#contents {
+        display: flex;
+    }
+    
+    
 }
 
 /* ***** Large Screens ***** */
@@ -357,4 +308,7 @@ section#contents {
     #imageAndLink1, #imageAndLink2, #imageAndLink3, #imageAndLink4 {
         padding: 5px;
     }
+    
+
+
 }
